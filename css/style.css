@@ -71,6 +71,15 @@ a{
     transition: 0.5s;
 }
 
+#carouselExample{
+    height: 500px;
+}
+
+#carouselExample img{
+    height: 500px;
+    object-fit: contain;
+}
+
 #im1:hover, #im2:hover, #im3:hover, #im4:hover{
     transform: scale(1.1);
 }
@@ -122,6 +131,12 @@ footer{
 }
 
 /* CONTENEDOR PRINCIPAL */
+
+#carouselExample{
+    display:flex;
+    height:70vh;
+
+}
 
 .contenedor{
     display:flex;

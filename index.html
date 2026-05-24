@@ -7,9 +7,13 @@
 
     
 
-    <!--  link para enlazar el archivo css  -->
+    <!--  link para enlazar el archivo css  --> 
     <link rel="stylesheet" href="css/style.css">
+
+    <!--  links para utilizar recursos de boostrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <script src="https://kit.fontawesome.com/2600c6ce36.js" crossorigin="anonymous"> </script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -17,9 +21,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
    
+    <!--  links para utilizar iconos de la pagina iconos8  -->
     <link rel="stylesheet" href="https://iconos8.es/icon/j0UqYiNss739/defend-family">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
+    
+  </head>
 <body id="fondoindex">
     <nav> 
         
@@ -34,9 +39,43 @@
     <h1 style="color: aliceblue;"> Acerca de mi vida </h1>
 
 
-  <!--  inicio de la carta  -->
+
+    <!-- Inicio del carrusel -->
+  <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img id="im5" src="/img/familia.jpeg" class="d-block mx-auto" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img id="im6" src="/img/estudios.jpeg" class="d-block mx-auto" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img id="im7" src="/img/personal.png" class="d-block mx-auto" alt="...">
+    </div>
+  </div>
+  
+    <!-- Inicio del boton -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  
+    <!-- Inicio del carrusel -->
+    <!-- Inicio del boton -->
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  
+    <!-- fin del boton del carrusel -->
+</div>
+    <!-- Fin del carrusel -->
+
+
+  <!--  inicio de las cartas (4)  -->
     <div id="cartas" class="row row-cols-1 row-cols-md-2 g-4">
-  <div  class="col">
+      <!--  Inicio de la carta 1  -->
+    <div  class="col">
     <div id="fcard1" class="card">
       <img id="im1" src="img/familia.jpeg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -48,6 +87,8 @@
       </div>
     </div>
   </div>
+  <!--  fin de la carta 1  -->
+  <!--  Inicio de la carta 2  -->
   <div  class="col">
     <div  id="fcard2" class="card">
       <img id="im2" src="img/estudios.jpeg" class="card-img-top" alt="...">
@@ -59,6 +100,8 @@
       </div>
     </div>
   </div>
+  <!--  fin de la carta 2  -->
+  <!--  Inicio de la carta 3  -->
   <div  class="col">
     <div  id="fcard3" class="card">
       <img id="im3" src="img/aspiraciones.jpg" class="card-img-top" alt="...">
@@ -72,6 +115,8 @@
       </div>
     </div>
   </div>
+  <!--  fin de la carta 3  -->
+  <!--  Inicio de la carta 4  -->
   <div class="col">
     <div  id="fcard4" class="card">
       <img id="im4" src="img/habilidades.webp" class="card-img-top" alt="...">
@@ -84,14 +129,16 @@
       </div>
     </div>
   </div>
+  <!--  fin de la carta 4  -->
 </div>
-
-<!--  fin de la carta  -->
+<!--  fin de las cartas (4)  -->
 
    
+<img src="" alt="">
 
-
+<!--  Se manda a llamar el archivo JavaScript de la carpeta JS  -->
 <script src="JS/style.js"></script>
+
 <footer>
   <p>@Joseph Ac</p>
 </footer>
